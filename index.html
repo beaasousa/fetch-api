@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula Fetch</title>
+    <style>
+        form{
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 0.25sem;
+            margin-bottom: 1em;
+        }
+
+        .resultado{
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img{
+            display: block;
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Fetch API</h1>
+
+    <form class="ana">
+        <label for="usuário">Usuário do Github</label>
+        <input type="text" name="usuário" id="usuário">
+        <button id="consultar">Consultar</button>
+    </form>
+
+    <div class="resultado">
+
+        <div id="mensagem"></div>
+        <img src="" id="avatar">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
